@@ -178,3 +178,8 @@ spec:
       resources:
         requests:
           storage: 10Gi # 필요에 따라 용량 조절
+
+# kubectl apply -f nats-cluster.yaml
+# nats://sys-user:YourSecretPassword@nats-client:4222
+# kubectl scale statefulset nats --replicas=5
+# kubectl scale statefulset nats --replicas=3
